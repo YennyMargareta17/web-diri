@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Diri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .profile-section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        video {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section: Profile Picture and Basic Info -->
+    <div class="profile-section">
+        <!-- img tag digunakan untuk menampilkan foto profil -->
+        <img src="download.jpg" alt="Foto Profil">
+        <h1>Yenny Margareta</h1>
+        <p>Halo! Saya adalah seorang pengembang web antusias dengan passion di bidang teknologi dan design kreatif</p>
+    </div>
+
+    <!-- Section: Contact Information Table -->
+    <div class="profile-section">
+        <h2>Ketrampilan</h2>
+        <!-- Table untuk menampilkan informasi kontak dalam bentuk tabel -->
+        <table>
+            <tr>
+                <!-- th tag untuk header kolom pada tabel -->
+                <th>Ketrampilan</th>
+                <th>Tingkat</th>
+            </tr>
+            <tr>
+                <!-- tr untuk setiap baris data, td untuk setiap sel data -->
+                <td>HTML/CSS</td>
+                <td>Mahir</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>Lumayan</td>
+            </tr>
+            <tr>
+                <td>Figma</td>
+                <td>Baik</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Section: Profile Video -->
+    <div class="profile-section">
+        <h2>Video Profil</h2>
+        <!-- video tag digunakan untuk menampilkan video pengenalan diri -->
+        <video controls>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+    </div>
+
+    <!-- Section: Feedback Form -->
+    <div class="profile-section">
+        <h2>Hubungi saya</h2>
+        <!-- form tag digunakan untuk menampung elemen input -->
+        <form action="/submit-feedback" method="POST">
+            <!-- label dan input untuk nama pengguna -->
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <!-- label dan input untuk email pengguna -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <!-- label dan input untuk masukan -->
+            <label for="feedback">Pesan:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+            
+            <!-- button tag untuk tombol kirim -->
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <!-- Section: External Links -->
+    <div class="profile-section">
+        <h2>Media Sosial</h2>
+        <!-- Link eksternal menggunakan a tag -->
+        <p>Ikuti saya di <a href="https://www.instagram.com/matchareth/" target="_blank">Instagram</a></p>
+    </div>
+
+</body>
+</html>
